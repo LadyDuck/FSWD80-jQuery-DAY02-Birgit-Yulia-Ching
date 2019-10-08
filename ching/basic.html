@@ -1,0 +1,82 @@
+<html>
+<head>
+    <title>DOM Manipulation</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<style>
+.container {
+   
+          
+}
+
+.row{
+display: flex;
+
+}
+
+</style>
+</head>
+<body>
+    <p>
+            <b>Click on the square below:</b>
+    </p>
+    <span id="result">here you get the same text</span>
+
+    <div class="container">
+    	
+    
+ <div class="row">
+    	<div> <img src="https://cdn.shopify.com/s/files/1/1369/2605/articles/White_Gift_Box_with_Red_Bow_PNG_Image_2048x.png?v=1511752878" alt=""  width="100px" height="100px">
+       
+    </div>
+    <div class="santa"  id="s1"> <img src="https://juststickers.in/wp-content/uploads/2016/11/santa-claus.png" alt="" width="100px" height="100px">
+         
+    </div>
+    <div> <img src="https://cdn.shopify.com/s/files/1/1369/2605/articles/White_Gift_Box_with_Red_Bow_PNG_Image_2048x.png?v=1511752878" alt=""  width="100px" height="100px">
+        
+    </div>
+ </div>
+    
+
+ <div class="row">
+    	 <div> <img src="https://cdn.shopify.com/s/files/1/1369/2605/articles/White_Gift_Box_with_Red_Bow_PNG_Image_2048x.png?v=1511752878" alt=""  width="100px" height="100px">
+       
+    </div>
+    <div class="santa" id="s2"> <img src="https://juststickers.in/wp-content/uploads/2016/11/santa-claus.png" alt="" width="100px" height="100px">
+         
+    </div>
+    <div> <img src="https://cdn.shopify.com/s/files/1/1369/2605/articles/White_Gift_Box_with_Red_Bow_PNG_Image_2048x.png?v=1511752878" alt=""  width="100px" height="100px">
+        
+    </div>
+ </div>
+   
+ <div class="row">
+    	
+    <div class="santa" id="s3"> <img src="https://juststickers.in/wp-content/uploads/2016/11/santa-claus.png" alt="" width="100px" height="100px">
+           
+    </div>
+    <div> <img src="https://cdn.shopify.com/s/files/1/1369/2605/articles/White_Gift_Box_with_Red_Bow_PNG_Image_2048x.png?v=1511752878" alt=""  width="100px" height="100px">
+        
+    </div>
+
+    <div class="santa" id="s4"> <img src="https://juststickers.in/wp-content/uploads/2016/11/santa-claus.png" alt="" width="100px" height="100px">
+           
+    </div>
+ </div>
+</div>
+
+<script>
+$(document).ready(function() {
+
+   $(".santa").click(function() {
+        $(this).css("visibility","hidden");
+    });
+ 
+   
+
+
+
+});
+</script>
+</body>
+</html>
